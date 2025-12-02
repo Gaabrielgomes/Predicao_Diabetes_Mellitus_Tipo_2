@@ -14,10 +14,22 @@ Comparar o desempenho de dois modelos clássicos de classificação para identif
 - Joblib (serialização de modelos)
 
 ## Dataset
-**Pima Indians Diabetes Database** (UCI Machine Learning Repository)
+
+**Download direto do dataset:**  
+[🔗 pima-indians-diabetes.csv](https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv)
+
+**Características:**
 - 768 amostras
 - 8 features clínicas
-- Target binário (0 = não diabético, 1 = diabético)
+- 1 target binário (0 = não diabético, 1 = diabético)
+- Formato CSV sem cabeçalho
+
+**Exemplo de uso:**
+```python
+import pandas as pd
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.csv"
+df = pd.read_csv(url, names=['Pregnancies','Glucose','BloodPressure','SkinThickness',
+                             'Insulin','BMI','DiabetesPedigreeFunction','Age','Outcome'])
 
 ## Estrutura do Projeto
 ```
